@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+    $(function() {
+      $('button').click(function() {
+        if ($('div').hasClass('t')) $('div').removeClass('t').addClass('t1');
+        else $('div').removeClass('t1').addClass('t')
+      })
+    })
+  </script>
+  <style>
+    .t {
+      height: 30px;
+      width: 100px;
+      border: 1px solid blue;
+      margin: 1px 8px;
+    }
+
+    .t1 {
+      width: 100px;
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+  <button>切换</button>
+  <div class="t"></div>
+</body>
+
+</html>
